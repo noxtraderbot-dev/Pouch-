@@ -1,0 +1,6 @@
+{
+  "name": "Meridian Federal Trust & Digital Banking",
+  "description": "Institutional-grade commercial and retail banking platform featuring multi-account ledger management, real-time double-entry transactions, transfer review workflows, and comprehensive security controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

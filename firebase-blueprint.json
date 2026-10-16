@@ -1,0 +1,50 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "Customer user profile",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" }
+      },
+      "required": ["uid", "email"]
+    },
+    "BankAccount": {
+      "title": "BankAccount",
+      "description": "User bank account",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "ownerUid": { "type": "string" },
+        "balance": { "type": "number" }
+      },
+      "required": ["id", "ownerUid"]
+    },
+    "BankingTransaction": {
+      "title": "BankingTransaction",
+      "description": "User transaction",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "amount": { "type": "number" }
+      },
+      "required": ["id", "amount"]
+    }
+  },
+  "firestore": {
+    "users": {
+      "schema": "UserProfile",
+      "description": "User profiles"
+    },
+    "accounts": {
+      "schema": "BankAccount",
+      "description": "Bank accounts"
+    },
+    "transactions": {
+      "schema": "BankingTransaction",
+      "description": "Transactions"
+    }
+  }
+}
